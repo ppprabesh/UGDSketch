@@ -9,25 +9,25 @@ const galleryItems = [
     id: 1,
     title: "Cybernetic Dreams",
     description: "A futuristic character concept exploring the fusion of human and machine.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/girl.png",
   },
   {
     id: 2,
     title: "Ethereal Landscapes",
     description: "Surreal digital painting of an otherworldly environment.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/girl2.png",
   },
   {
     id: 3,
     title: "Character Study",
     description: "Detailed character design with emphasis on expression and personality.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/Viking.png",
   },
   {
     id: 4,
     title: "Abstract Visions",
     description: "Experimental digital art exploring form, color, and emotion.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/rujanDai.jpg",
   },
 ]
 
@@ -81,7 +81,7 @@ export function Gallery() {
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 transition-opacity group-hover:opacity-100">
